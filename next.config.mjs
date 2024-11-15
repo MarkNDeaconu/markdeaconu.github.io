@@ -4,8 +4,8 @@ const nextConfig = {
     images: {
       unoptimized: true, // Required for GitHub Pages
     },
-    basePath: '/markdeaconu.github.io', // Replace with your repository name
   };
   
   export default nextConfig;
+  
   
