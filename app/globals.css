@@ -12,27 +12,24 @@ body {
   font-family: 'Roboto Mono', monospace;
   background-color: #0d1117; /* Space black */
   color: #c9d1d9;
-  display: flex;
-  justify-content: center; /* Horizontally center content */
-  align-items: flex-start; /* Align content to the top */
-  height: 100vh;
-  overflow: hidden;
   line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .layout-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align content to the top */
-  align-items: center; /* Center content horizontally */
+  align-items: center;
   width: 100%;
   max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
 }
 
 /* Main content area */
 .main-content {
   width: 100%;
+  padding-bottom: 50px; /* Add space at the bottom */
 }
 
 /* Header and social links styling */
@@ -48,11 +45,11 @@ body {
 
 .blog-title a {
   color: white;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
 }
 
 .blog-title a:hover {
-  color: white; /* Keep white on hover */
+  color: white;
 }
 
 .social-links {
@@ -67,20 +64,14 @@ body {
   font-size: 1.5em;
 }
 
-/* Styling for links */
+/* Link styling */
 a {
-  color: #58a6ff; /* Default link color */
-  text-decoration: none; /* Remove underline */
-}
-
-a:visited {
-  color: #58a6ff; /* Consistent color for visited links */
-  text-decoration: none; /* Remove underline */
+  color: #58a6ff;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #1f6feb; /* Slightly darker color on hover */
-  text-decoration: none; /* No underline on hover */
+  color: #1f6feb;
 }
 
 /* Content Container */
@@ -90,51 +81,6 @@ a:hover {
   padding: 20px;
 }
 
-/* Positioning for the Bloch sphere */
-.bloch-sphere {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 150px;
-  height: 150px;
-}
-
-/* Hide Bloch Spheres on mobile */
-@media (max-width: 768px) {
-  .bloch-sphere {
-    display: none;
-  }
-}
-
-/* Markdown content styling */
-.blog-post {
-  font-family: 'Roboto Mono', monospace;
-  line-height: 1.6;
-}
-
-pre {
-  background: #1e1e1e;
-  padding: 1em;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-
-code {
-  font-family: 'Source Code Pro', monospace;
-  background: #2d2d2d;
-  color: #f8f8f2;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-}
-
-/* KaTeX styling */
-.katex-display {
-  margin: 1em 0;
-}
-
-.katex {
-  font-size: 1.2em;
-}
 
 
 

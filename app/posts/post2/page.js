@@ -1,12 +1,50 @@
-// app/posts/post2/page.js
-export default function Post2() {
+import MarkdownRenderer from '../../../components/MarkdownRenderer';
+
+// Metadata for this blog post
+export const metadata = {
+  title: "Welcome to My Blog",
+  date: "November 14, 2024",
+};
+
+const blogContent = `
+# Welcome to My Blog
+
+This is a paragraph with **bold text**, _italic text_, and [a link](https://example.com).
+
+## Code Example
+
+Here's a Python code snippet:
+
+\`\`\`python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("World"))
+\`\`\`
+
+## LaTeX Example
+
+Inline math: $E = mc^2$
+
+Display math:
+
+$$
+\\int_a^b f(x) dx = F(b) - F(a)
+$$
+
+## Markdown Features
+
+- Bullet points
+- **Bold** and _italic_
+- [Links](https://example.com)
+`;
+
+export default function BlogPost() {
   return (
-    <div>
-      <h2>Getting Started with JavaScript</h2>
-      <p>Posted on November 1, 2024</p>
-      <p>This post covers the basics of getting started with JavaScript...</p>
+    <div className="blog-post">
+      <MarkdownRenderer content={blogContent} />
     </div>
   );
 }
 
-  
+

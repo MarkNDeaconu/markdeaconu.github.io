@@ -1,10 +1,15 @@
-/* page.module.css */
+/* Specific styling for the blog post list */
+.postList {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
 
+/* Styling for individual post boxes */
 .postBox {
   background-color: #161b22;
   border-radius: 10px;
   margin-bottom: 20px;
-  overflow: hidden; /* Ensure hover effect covers entire box */
   cursor: pointer;
   transition: border 0.3s ease-in-out;
 }
@@ -13,20 +18,25 @@
   border: 2px solid #ffffff;
 }
 
+/* Content inside each post box */
 .postContent {
   padding: 20px;
 }
 
+/* Title of each post */
 .postTitle {
   font-size: 1.5em;
   color: #c9d1d9;
   margin: 0;
 }
 
+/* Date of each post */
 .postDate {
   font-size: 0.9em;
   color: #8b949e;
 }
+
+
 
 
 
