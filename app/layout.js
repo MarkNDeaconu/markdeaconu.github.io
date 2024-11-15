@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import BlochSphere from './BlochSphere';
+import BlochSphere from './blochsphere';
 import Image from 'next/image';
 import './globals.css';
 
