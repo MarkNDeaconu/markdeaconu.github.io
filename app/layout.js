@@ -16,6 +16,12 @@ export default function Layout({ children }) {
                 <Link href="/">Mark Deaconu</Link>
               </h1>
               <div className="social-links">
+                {/* CV Icon */}
+                <Link href="/cv" className="social-link">
+                  <Image src="/images/cvlogo3.png" alt="CV" width={24} height={24} />
+                </Link>
+
+                {/* GitHub Icon */}
                 <a
                   href="https://github.com/MarkNDeaconu"
                   className="social-link"
@@ -24,6 +30,8 @@ export default function Layout({ children }) {
                 >
                   <Image src="/images/githublogo2.png" alt="GitHub" width={24} height={24} />
                 </a>
+
+                {/* YouTube Icon */}
                 <a
                   href="https://www.youtube.com/@markdeaconu1245"
                   className="social-link"
@@ -32,6 +40,8 @@ export default function Layout({ children }) {
                 >
                   <Image src="/images/youtubelogo2.webp" alt="YouTube" width={24} height={24} />
                 </a>
+
+                {/* LinkedIn Icon */}
                 <a
                   href="https://www.linkedin.com/in/mark-deaconu-621b44220/"
                   className="social-link"

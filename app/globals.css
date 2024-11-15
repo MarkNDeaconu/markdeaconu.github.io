@@ -81,6 +81,17 @@ a:hover {
   padding: 20px;
 }
 
+.cv-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+  background-color: #0d1117; /* Optional: match theme */
+  color: #c9d1d9; /* Optional: text color */
+}
+
+
 
 
 
