@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import BlochSphere from './blochsphere';
+import BlochSphere from './BlochSphere';
 import Image from 'next/image';
 import './globals.css';
 import { useEffect, useState } from 'react';

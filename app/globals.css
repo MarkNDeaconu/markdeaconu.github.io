@@ -106,6 +106,37 @@ a:hover {
   }
 }
 
+/* Markdown content styling */
+.blog-post {
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+}
+
+pre {
+  background: #1e1e1e;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+/* KaTeX styling */
+.katex-display {
+  margin: 1em 0;
+}
+
+.katex {
+  font-size: 1.2em;
+}
+
+
 
 
 
