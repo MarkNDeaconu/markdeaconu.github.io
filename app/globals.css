@@ -45,7 +45,14 @@ body {
   font-size: 2.5em;
   color: #c9d1d9;
 }
+.blog-title a {
+  color: white;
+  text-decoration: none; /* Remove underline */
+}
 
+.blog-title a:hover {
+  color: white; /* Keep white on hover */
+}
 .social-links {
   margin-top: 10px;
   display: flex;

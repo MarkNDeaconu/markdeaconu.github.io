@@ -1,6 +1,6 @@
-// layout.js
 "use client";
 
+import Link from 'next/link';
 import BlochSphere from './BlochSphere';
 import Image from 'next/image';
 import './globals.css';
@@ -12,7 +12,9 @@ export default function Layout({ children }) {
         <div className="layout-container">
           <main className="main-content">
             <header className="header">
-              <h1 className="blog-title">Mark Deaconu</h1>
+              <h1 className="blog-title">
+                <Link href="/">Mark Deaconu</Link> {/* Link to homepage */}
+              </h1>
               <div className="social-links">
                 <a
                   href="https://github.com/MarkNDeaconu"
@@ -50,6 +52,7 @@ export default function Layout({ children }) {
     </html>
   );
 }
+
 
 
 
