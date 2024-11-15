@@ -1,42 +1,95 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+/* Reset styles */
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #0d1117; /* Space black */
+  color: #c9d1d9;
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: flex-start; /* Align content to the top */
+  height: 100vh;
+  overflow: hidden;
+  line-height: 1.6;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center content horizontally */
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Main content area */
+.main-content {
+  width: 100%;
+}
+
+/* Header and social links styling */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-title {
+  font-size: 2.5em;
+  color: #c9d1d9;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  color: #c9d1d9;
+  font-size: 1.5em;
+}
+
+/* Styling for links */
 a {
-  color: inherit;
-  text-decoration: none;
+  color: #58a6ff; /* Default link color */
+  text-decoration: none; /* Remove underline */
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+a:visited {
+  color: #58a6ff; /* Consistent color for visited links */
+  text-decoration: none; /* Remove underline */
 }
+
+a:hover {
+  color: #1f6feb; /* Slightly darker color on hover */
+  text-decoration: none; /* No underline on hover */
+}
+
+/* Content Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Positioning for the Bloch sphere */
+.bloch-sphere {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+
+
+
